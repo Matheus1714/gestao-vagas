@@ -1,0 +1,40 @@
+# @name create-candidate
+POST http://localhost:8081/candidate
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "username": "johndoe",
+    "email": "johndoe@gmail.com",
+    "password": "1234567890",
+    "description": "Um exelente candidato",
+    "curriculum": "Muito bom"
+}
+
+###
+
+# @name create-company
+POST http://localhost:8081/company
+Content-Type: application/json
+
+{
+    "name": "John Doe Company",
+    "username": "johndoecompany",
+    "email": "johndoe@company.com",
+    "password": "1234567890",
+    "description": "Uma exelente compania",
+    "website": "https://company.com.br"
+}
+
+###
+
+# @name create-job
+POST http://localhost:8081/job
+Content-Type: application/json
+
+{
+    "description": "Vaga para pessoa desenvolvedora Java que deseja trabalhar com Spring Boot",
+    "benefits": "GymPasss, Plano de Saúde, Day Off Aniversário, Vale alimentação e refeição",
+    "level": "JUNIOR",
+    "companyId": "f0f8fafa-5cc4-4317-af9d-e0ffdcca2774"
+}
